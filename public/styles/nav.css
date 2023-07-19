@@ -10,7 +10,7 @@ nav {
   position: fixed;
 }
 
-nav .title {
+nav #title {
   font-family: 'Bungee', cursive, sans-serif;
 }
 

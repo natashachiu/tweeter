@@ -34,14 +34,14 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span class="title">tweeter</span>
+    <span id="title">tweeter</span>
     <div>
       <span><strong>Write</strong> a new tweet</span>
       <i class="fa-solid fa-angles-down"></i>
     </div>
   </nav>
 
-  <header class="header">
+  <header id="header">
     <div>
       <img src="/images/profile-hex.png" alt="">
     </div>
@@ -51,8 +51,8 @@
   </header>
 
   <!-- Page-specific (main) content here -->
-  <main class="container">
-    <section class="new-tweet">
+  <main id="container">
+    <section id="new-tweet">
       <h2>Compose Tweet</h2>
       <form>
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
@@ -63,22 +63,8 @@
       </form>
     </section>
 
-    <section class="tweet-container">
-      <article>
-        <header>
-          <span>Newton</span>
-          <span class="handle">@SirIsaac</span>
-        </header>
-        <div>If I have seen further it is by standing on the shoulder of giants</div>
-        <footer>
-          <span>10 days ago</span>
-          <span>
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </span>
-        </footer>
-      </article>
+    <section id="tweets-container">
+
     </section>
   </main>
 </body>
