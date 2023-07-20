@@ -1,8 +1,25 @@
 #new-tweet {
-  display: flex;
+  display: none;
   flex-direction: column;
   color: #56565f;
   margin-bottom: 55px;
+}
+
+#new-tweet h2 {
+  margin-bottom: 0.5em;
+}
+
+#error-box {
+  display: none;
+  color: red;
+  border: 2px solid red;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+#error-msg {
+  padding: 0 0.2em;
 }
 
 textarea {
@@ -18,15 +35,17 @@ textarea:focus {
   outline: none
 }
 
-.charLimit {
+form .char-limit {
   color: red;
 }
+
+
 
 form div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 18px;
+  margin-top: 0.5em;
   font-family: 'Bungee', cursive, sans-serif;
 }
 

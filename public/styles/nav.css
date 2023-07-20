@@ -20,6 +20,28 @@ nav div {
   align-items: center;
 }
 
+nav button {
+  cursor: pointer;
+  width: 45px;
+}
+
+nav button:hover {
+  transform: translateY(4px) scale(1.2);
+}
+
 nav i {
   color: red
+}
+
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
 }
