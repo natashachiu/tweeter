@@ -1,0 +1,55 @@
+@use 'layout';
+
+article {
+  border: 3px solid;
+  padding: 0.7em 0.5em;
+  margin: 1.5em 0;
+
+  header,
+  footer {
+    @include layout.vertical-align;
+    justify-content: space-between;
+    padding: 0 0.3em;
+  }
+
+  p {
+    border-bottom: 3px solid;
+    padding: 1.3em 0.5em;
+    margin: 0.5em 0;
+    font-size: 22px;
+    overflow-wrap: break-word;
+  }
+
+  div {
+    @include layout.vertical-align;
+    gap: 12px;
+    font-size: 22px;
+  }
+
+  img {
+    width: 40px;
+  }
+
+  .handle {
+    color: layout.$handle-color;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 0 0.7em;
+  }
+
+  i {
+    font-size: 14px;
+    color: layout.$nav-color;
+  }
+
+  i:hover {
+    color: layout.$header-color;
+    cursor: pointer;
+  }
+}
+
+article:hover {
+  box-shadow: 6px 6px layout.$box-shadow-color;
+}

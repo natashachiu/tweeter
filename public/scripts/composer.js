@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $("#scroll-to-top").on("click", () => {
-    $('html, body').animate({ scrollTop: '0px' }, 300);
+    $('html, body').animate({ scrollTop: 0 }, 300);
     $("#new-tweet").show();
     $("textarea").focus();
   });

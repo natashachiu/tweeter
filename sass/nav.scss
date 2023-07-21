@@ -1,0 +1,36 @@
+@use 'layout';
+
+nav {
+  color: layout.$title-color;
+  height: 120px;
+  width: 100%;
+  padding: 0 1.5em;
+  @include layout.vertical-align;
+  justify-content: space-between;
+  position: fixed;
+
+  #title {
+    font-family: layout.$title-font;
+  }
+
+  button {
+    @include layout.default-button;
+    @include layout.vertical-align;
+    flex-direction: column;
+    background-color: inherit;
+  }
+
+  button:hover>i {
+    transform: translateY(6px) scale(1.2);
+  }
+
+  i {
+    color: layout.$error-color;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    background-color: layout.$nav-color;
+  }
+}

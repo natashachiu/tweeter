@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -41,39 +43,42 @@
   <nav>
     <span id="title">tweeter</span>
     <div>
-      <span><strong>Write</strong> a new tweet</span>
-      <button><i class="fa-solid fa-angles-down"></i></button>
+      <button><span><strong>Write</strong> a new tweet</span>
+        <i class="fa-solid fa-angles-down"></i></button>
     </div>
   </nav>
 
-  <header id="header">
-    <div>
-      <img src="/images/profile-hex.png" alt="">
-    </div>
-    <div>
-      <h2>Your Name</h2>
-    </div>
-  </header>
+  <div id="header-main">
+    <header id="header">
+      <div>
+        <img src="/images/profile-hex.png" alt="">
+      </div>
+      <div>
+        <h2><strong>Amy</strong> Mansell</h2>
+      </div>
+    </header>
 
-  <!-- Page-specific (main) content here -->
-  <main id="container">
-    <section id="new-tweet">
-      <h2>Compose Tweet</h2>
-      <p id="error-box">
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <span id="error-msg"></span>
-      </p>
-      <form method="post" action="/tweets">
-        <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-        <div>
-          <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
-    <section id="tweets-container"></section>
-  </main>
+    <!-- Page-specific (main) content here -->
+    <main id="container">
+      <section id="new-tweet">
+        <h2>Compose Tweet</h2>
+        <p id="error-box">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span id="error-msg"></span>
+        </p>
+        <form method="post" action="/tweets">
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <section id="tweets-container"></section>
+    </main>
+  </div>
 
+  <!-- Scroll to top button (fixed) -->
   <button id="scroll-to-top"><i class="fa-solid fa-angles-up"></i></button>
 </body>
 

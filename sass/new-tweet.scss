@@ -1,0 +1,56 @@
+@use 'layout';
+
+#new-tweet {
+  display: none;
+  flex-direction: column;
+  margin-bottom: 2em;
+
+  h2 {
+    margin: 1em 0 0.5em;
+    font-size: 32px;
+  }
+}
+
+#error-box {
+  display: none;
+  color: layout.$error-color;
+  border: 2px solid layout.$error-color;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+#error-msg {
+  padding: 0 0.2em;
+}
+
+
+form {
+  textarea {
+    border: transparent;
+    border-bottom: 3px solid;
+    background-color: layout.$primary-bgc;
+    width: 100%;
+    resize: none;
+  }
+
+  textarea:focus {
+    outline: none
+  }
+
+  .char-limit {
+    color: layout.$error-color;
+  }
+
+  div {
+    @include layout.vertical-align;
+    justify-content: space-between;
+    margin-top: 0.5em;
+    font-family: layout.$title-font;
+  }
+
+  button {
+    @include layout.default-button;
+    background-color: layout.$nav-color;
+  }
+}

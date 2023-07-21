@@ -1,0 +1,27 @@
+@use 'layout';
+
+#header {
+  padding-top: 120px;
+  height: 520px;
+  width: 100%;
+  @include layout.vertical-align;
+  flex-direction: column;
+  justify-content: center;
+  background-color: layout.$header-color;
+  background-image: url("../images/asfalt-light.png");
+  color: layout.$title-color;
+}
+
+#header h2 {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+  #header {
+    margin: 2em;
+    margin-top: 8.5em;
+    padding-top: 0px;
+    height: 420px;
+    width: 30%
+  }
+}

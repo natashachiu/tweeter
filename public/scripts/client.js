@@ -5,7 +5,7 @@
  */
 $(document).ready(function() {
 
-  // appends tweets to tweets-container section
+  // adds tweets to tweets-container section
   const renderTweets = (tweets) => {
     $("#tweets-container").empty();
     for (const tweet of tweets) {
@@ -39,8 +39,7 @@ $(document).ready(function() {
     return $article;
   };
 
-
-
+  // validate data submitted from form, POST to /tweets
   $("form").on("submit", function(event) {
     event.preventDefault();
     const serializedString = $(this).serialize();
@@ -53,15 +52,17 @@ $(document).ready(function() {
     if (isValid) {
       $.ajax("/tweets", { method: "POST", data: serializedString })
         .then(loadTweets);
+      $("textarea").val("");
+      $("output").text("140");
+
     } else {
       $("#error-box").slideDown();
       $("#error-msg").text(error);
     }
-
-    $('textarea').val('');
   });
 
 
+  // GET data from /tweets to render tweets
   const loadTweets = () => {
     $.ajax("/tweets", { method: "GET" }).then(renderTweets);
   };
@@ -78,6 +79,8 @@ $(document).ready(function() {
     return { isValid: true, error: null };
   };
 
+
+  // new tweet button and compose tweet box sliding
   $("nav button").on("click", () => {
     if ($("#new-tweet").is(":hidden")) {
       $("#new-tweet").slideDown();

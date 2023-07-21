@@ -3,6 +3,8 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+
 html {
   box-sizing: border-box;
 }
@@ -16,22 +18,46 @@ html {
 /*
  * Global layout stuff
  */
+$body-font: 'Source Sans 3', sans-serif;
+$title-font: 'Bungee', cursive, sans-serif;
+$primary-bgc: #f4f1ec;
+$primary-font-color: #545149;
+$nav-color: #4056A1;
+$header-color: #f59e0b;
+$title-color: #FFFFFF;
+$error-color: #E23636;
+$handle-color: #A1A1AA;
+$box-shadow-color: #4057a14e;
+
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: $primary-font-color;
+  background-color: $primary-bgc;
   font-size: 24px;
-  font-family: "Source Sans 3", sans-serif;
+  font-family: $body-font;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
 main {
   width: 90%;
   margin: 0 auto;
 }
 
 /* mixins */
+@mixin vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+@mixin default-button {
+  color: $title-color;
+  border: none;
+  padding: 0.4em 0.4em;
+  cursor: pointer;
+}
+
 #scroll-to-top {
   display: none;
   position: fixed;
@@ -40,11 +66,8 @@ main {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #E23636;
-  color: #FFFFFF;
-  border: none;
-  padding: 0.4em 0.4em;
-  cursor: pointer;
+  background-color: $error-color;
+  @include default-button;
 }
 
 /* Desktop styles */
@@ -52,6 +75,7 @@ main {
   #header-main {
     display: flex;
   }
+
   #container {
     margin-top: 120px;
     padding: 2em;
