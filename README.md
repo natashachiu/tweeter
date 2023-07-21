@@ -4,11 +4,8 @@ Tweeter is a simple, single-page Twitter clone.
 
 ## Final Product
 
-<!-- !["Screenshot of URLs home page"](https://github.com/natashachiu/tinyapp/blob/main/docs/urls.png?raw=true)
-!["Screenshot of create page"](https://github.com/natashachiu/tinyapp/blob/main/docs/create-url.png?raw=true)
-!["Screenshot of edit page"](https://github.com/natashachiu/tinyapp/blob/main/docs/url-page.png?raw=true)
-!["Screenshot of register page"](https://github.com/natashachiu/tinyapp/blob/main/docs/register.png?raw=true) -->
-
+!["Screenshot of desktop view"](https://github.com/natashachiu/tweeter/blob/master/docs/desktop.png?raw=true)
+!["Screenshot of mobile view"](https://github.com/natashachiu/tweeter/blob/master/docs/mobile.png?raw=true)
 
 ## Dependencies
 
