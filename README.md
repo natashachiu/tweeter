@@ -6,6 +6,8 @@ Tweeter is a simple, single-page Twitter clone.
 
 !["Screenshot of desktop view"](https://github.com/natashachiu/tweeter/blob/master/docs/desktop.png?raw=true)
 !["Screenshot of mobile view"](https://github.com/natashachiu/tweeter/blob/master/docs/mobile.png?raw=true)
+!["Screenshot of back to top button"](https://github.com/natashachiu/tweeter/blob/master/docs/back-to-top.png?raw=true)
+
 
 ## Dependencies
 
